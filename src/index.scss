@@ -1,15 +1,66 @@
 @font-face {
-  font-family: 'DIN';
-  src: url('./fonts/clanot-news.otf');
-  font-weight: normal;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Barlow Thin'), local('Barlow-Thin'), url(./fonts/Barlow-Thin.ttf) format('truetype'), url(./fonts/Barlow-Thin.woff) format('woff'), url(./fonts/Barlow-Thin.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'DIN';
-  src: url('./fonts/clanot-thin.otf');
-  font-weight: 300;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Barlow ExtraLight'), local('Barlow-ExtraLight'), url(./fonts/Barlow-ExtraLight.ttf) format('truetype'), url(./fonts/Barlow-ExtraLight.woff) format('woff'), url(./fonts/Barlow-ExtraLight.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Barlow Light'), local('Barlow-Light'), url(./fonts/Barlow-Light.ttf) format('truetype'), url(./fonts/Barlow-Light.woff) format('woff'), url(./fonts/Barlow-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Barlow.eot);
+  src: local('Barlow'), local('Barlow Regular'), local('Barlow-Regular'), url(./fonts/Barlow.eot?#iefix) format('embedded-opentype'), url(./fonts/Barlow.ttf) format('truetype'), url(./fonts/Barlow.woff) format('woff'), url(./fonts/Barlow.woff2) format('woff2'), url(./fonts/Barlow.svg#Barlow) format('svg');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Barlow Medium'), local('Barlow-Medium'), url(./fonts/Barlow-Medium.ttf) format('truetype'), url(./fonts/Barlow-Medium.woff) format('woff'), url(./fonts/Barlow-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Barlow SemiBold'), local('Barlow-SemiBold'), url(./fonts/Barlow-SemiBold.ttf) format('truetype'), url(./fonts/Barlow-SemiBold.woff) format('woff'), url(./fonts/Barlow-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Barlow Bold'), local('Barlow-Bold'), url(./fonts/Barlow-Bold.ttf) format('truetype'), url(./fonts/Barlow-Bold.woff) format('woff'), url(./fonts/Barlow-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Barlow ExtraBold'), local('Barlow-ExtraBold'), url(./fonts/Barlow-ExtraBold.ttf) format('truetype'), url(./fonts/Barlow-ExtraBold.woff) format('woff'), url(./fonts/Barlow-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Barlow Black'), local('Barlow-Black'), url(./fonts/Barlow-Black.ttf) format('truetype'), url(./fonts/Barlow-Black.woff) format('woff'), url(./fonts/Barlow-Black.woff2) format('woff2');
+}
 
 :root {
   --color-gray-dark: #475157;
@@ -43,7 +94,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'DIN';
+  font-family: 'Barlow';
   font-weight: normal;
   font-size: 14px;
   line-height: 1.5;
