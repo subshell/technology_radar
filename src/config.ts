@@ -4,18 +4,19 @@ export const radarName = process.env.RADAR_NAME || 'AOE Technology Radar'
 export const radarNameShort = radarName;
 
 export const quadrants = [
-    'languages-and-frameworks',
-    'methods-and-patterns',
-    'platforms-and-aoe-services',
+    'languages',
+    'frameworks-and-libraries',
+    'cloud',
     'tools',
 ];
 
 export const rings = [
     'all',
-    'adopt',
+    'established',
     'trial',
     'assess',
-    'hold'
+    'hold',
+    'deprecated'
 ] as const;
 
 export type Ring = typeof rings[number]
@@ -25,9 +26,9 @@ export const getItemPageNames = (items: Item[]) => items.map(item => `${item.qua
 export const showEmptyRings = false;
 
 const messages: { [k: string]: string } = {
-    'languages-and-frameworks': 'Languages & Frameworks',
-    'methods-and-patterns': 'Methods & Patterns',
-    'platforms-and-aoe-services': 'Platforms and Operations',
+    'languages': 'Languages',
+    'frameworks-and-libraries': 'Frameworks and Libraries',
+    'cloud': 'Cloud',
     'tools': 'Tools',
 };
 
