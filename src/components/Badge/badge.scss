@@ -24,7 +24,7 @@
     background: var(--color-gray-normal);
     border-color: var(--color-gray-normal);
   }
-  &--adopt {
+  &--established {
     background: var(--color-green);
     border-color: var(--color-green);
   }
@@ -39,6 +39,10 @@
   &--hold {
     background: var(--color-marine);
     border-color: var(--color-marine);
+  }
+  &--deprecated {
+    background: var(--color-gray-normal);
+    border-color: var(--color-gray-normal);
   }
 
 }
