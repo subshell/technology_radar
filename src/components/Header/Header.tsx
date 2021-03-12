@@ -49,11 +49,13 @@ export default function Header({ pageName }: { pageName: string }) {
   return (
     <Branding logoContent={<LogoLink small={smallLogo} />}>
       <div className='nav'>
+        {/* // TODO: Add "How to use our radar" back with a customized page
         <div className='nav__item'>
           <Link pageName='help-and-about-tech-radar' className='icon-link'>
             <span className='icon icon--question icon-link__icon'/>How to Use {radarNameShort}?
           </Link>
         </div>
+        */}
         <div className='nav__item'>
           <Link pageName='overview' className='icon-link'>
             <span className='icon icon--overview icon-link__icon'/>Technologies Overview
