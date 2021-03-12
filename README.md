@@ -1,27 +1,12 @@
-# AOE Technology Radar
+# subshell Technology Radar
 
-A static site generator for AOE Technology Radar
-
-## Looking for the AOE Tech Radar content?
-
-The repository is now found here: https://github.com/AOEpeople/techradar
-
-The AOE Tech radar is deployed here: https://www.aoe.com/techradar/index.html
-
-## Usage for your own radar?
-
-The generator is free to use under Open Source License - in fact there are already some other Radars published based on our Radar and there are also Contributions back.
-(There is a list of planned features below in case someone wants to contribute :-)
-
-However please be aware:
-* It would be nice to mention in radar that the generator is based on this repository.
-* Also when you want to reuse the CSS and Styling: Change the font (it is a licensed font) and the colors (It using AOE CI)
+A static site generator for the subshell Technology Radar based on the AOE Technology Radar: https://github.com/AOEpeople/aoe_technology_radar
 
 ## Use and build
 
 Add the tech radar as a dependency
 ```
-yarn add https://github.com/aoepeople/aoe_technology_radar.git
+yarn add https://github.com/subshell/technology_radar.git
 ```
 
 Build the radar
@@ -66,8 +51,8 @@ where the attributes of the item are listed:
 ```
 ---
 title:      "React"
-ring:       adopt
-quadrant:   languages-and-frameworks
+ring:       established
+quadrant:   languages
 ---
 
 Text goes here. You can use **markdown** here.
@@ -76,9 +61,9 @@ Text goes here. You can use **markdown** here.
 Following front-matter attributes are possible:
 
 * **title**: Name of the Item
-* **quadrant**: Quadrant. One of `languages-and-frameworks`,
-  `methods-and-patterns`, `platforms-and-aoe-services`, `tools`
-* **ring**: Ring section in radar. One of `trial`, `assess`, `adopt`, `hold`
+* **quadrant**: Quadrant. One of `languages`,
+  `frameworks-and-libraries`, `cloud`, `tools`
+* **ring**: Ring section in radar. One of `established`, `trial`, `assess`, `hold`, `deprecated`
 * **info**: (optional) A short textual description of the item (visible in
   overview pages)
 * **featured**: (optional, default "true") If you set this to `false`, the item
