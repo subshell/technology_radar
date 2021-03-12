@@ -1,6 +1,6 @@
 import {Item} from './model';
 
-export const radarName = process.env.RADAR_NAME || 'AOE Technology Radar'
+export const radarName = process.env.RADAR_NAME || 'subshell Technology Radar'
 export const radarNameShort = radarName;
 
 export const quadrants = [

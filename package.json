@@ -4,7 +4,8 @@
   "description": "AOE Technology Radar",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "scripts/start.js"
   },
   "bin": {
     "aoe_technology_radar": "scripts/build.js",
@@ -32,6 +33,7 @@
     "@types/marked": "^1.1.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
+    "@types/react-dom": "^17.0.2",
     "@types/react-router-dom": "^5.1.5",
     "@types/walk": "^2.3.0",
     "babel-loader": "8.1.0",
