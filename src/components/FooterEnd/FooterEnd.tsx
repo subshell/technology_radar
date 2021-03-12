@@ -31,6 +31,11 @@ export default function FooterEnd({ modifier }: { modifier?: 'in-sidebar' }) {
         </div>
       </div>
         */}
+      <div>
+          <p>
+              This Technology Radar is a fork of the open source <a href='https://github.com/AOEpeople/aoe_technology_radar' target='_blank' rel='noopener noreferrer'>AOE Technology Radar</a>.
+          </p>
+      </div>
       <div className='footer-copyright'>
         <p>
           <a href='https://subshell.com/about/imprint/' target='_blank' rel='noopener noreferrer'>
