@@ -78,7 +78,7 @@ function getClientEnvironment(publicUrl) {
         // images into the `src` and `import` them in code to get their paths.
         PUBLIC_URL: publicUrl,
 
-        RADAR_NAME: process.env.RADAR_NAME || 'AOE Technology Radar',
+        RADAR_NAME: process.env.RADAR_NAME || 'subshell Technology Radar',
 
         // We support configuring the sockjs pathname during development.
         // These settings let a developer run multiple simultaneous projects.

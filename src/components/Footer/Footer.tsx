@@ -10,9 +10,7 @@ export default function Footer({ items, pageName }: { items: Item[]; pageName: s
     <div className={classNames('footer', { 'is-hidden': !isMobileViewport() && getItemPageNames(items).includes(pageName) })}>
       <Branding modifier='footer' logoContent={<img src={assetUrl('logo.svg')} width='150px' height='60px' alt='' />}>
         <span className='footnote'>
-          AOE is a leading global provider of services for digital transformation and digital business models. AOE relies exclusively on established Enterprise
-          Open Source technologies. This leads to innovative solutions, digital products and portals in agile software projects, and helps build long-lasting,
-          strategic partnerships with our customers.
+          subshell is a flexible, tight-knit software company founded in 1999 with the goal of providing useful solutions to a variety of media organizations.
         </span>
       </Branding>
       <FooterEnd />

@@ -1,32 +1,28 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isMobileViewport = exports.translate = exports.getItemPageNames = exports.assetUrl = exports.rings = exports.quadrants = exports.radarNameShort = exports.radarName = void 0;
-exports.radarName = process.env.RADAR_NAME || 'AOE Technology Radar';
+exports.assetUrl = exports.isMobileViewport = exports.translate = exports.showEmptyRings = exports.getItemPageNames = exports.rings = exports.quadrants = exports.radarNameShort = exports.radarName = void 0;
+exports.radarName = process.env.RADAR_NAME || 'subshell Technology Radar';
 exports.radarNameShort = exports.radarName;
 exports.quadrants = [
-    'languages-and-frameworks',
-    'methods-and-patterns',
-    'platforms-and-aoe-services',
+    'languages',
+    'frameworks-and-libraries',
+    'cloud',
     'tools',
 ];
 exports.rings = [
     'all',
-    'adopt',
+    'established',
     'trial',
     'assess',
-    'hold'
+    'hold',
+    'deprecated'
 ];
-// todo: fix
-function assetUrl(file) {
-    return process.env.PUBLIC_URL + '/' + file;
-    // return `/techradar/assets/${file}`
-}
-exports.assetUrl = assetUrl;
 exports.getItemPageNames = (items) => items.map(item => `${item.quadrant}/${item.name}`);
+exports.showEmptyRings = false;
 const messages = {
-    'languages-and-frameworks': 'Languages & Frameworks',
-    'methods-and-patterns': 'Methods & Patterns',
-    'platforms-and-aoe-services': 'Platforms and Operations',
+    'languages': 'Languages',
+    'frameworks-and-libraries': 'Frameworks and Libraries',
+    'cloud': 'Cloud',
     'tools': 'Tools',
 };
 exports.translate = (key) => (messages[key] || '-');
@@ -38,3 +34,8 @@ function isMobileViewport() {
     return width < 1200;
 }
 exports.isMobileViewport = isMobileViewport;
+function assetUrl(file) {
+    return process.env.PUBLIC_URL + '/' + file;
+    // return `/techradar/assets/${file}`
+}
+exports.assetUrl = assetUrl;

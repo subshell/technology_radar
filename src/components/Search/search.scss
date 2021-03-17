@@ -11,14 +11,15 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px 120px 10px 20px;
-    background: #3A444A;
+    background: #2f2f53;
     display: block;
     border: none;
     color: var(--color-white);
     font-size: 16px;
     line-height: 1;
-    font-family: 'DIN';
+    font-family: 'IBM Plex Sans';
     font-weight: normal;
+    border-radius: 50vh;
 
     &::placeholder {
       color: var(--color-gray-normal);
@@ -26,7 +27,7 @@
 
     &:focus {
       outline: none;
-      background: #2F393F;
+      background: #2f2f53;
     }
   }
 

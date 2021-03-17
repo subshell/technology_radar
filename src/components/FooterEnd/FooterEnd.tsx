@@ -4,6 +4,7 @@ import './footerend.scss';
 export default function FooterEnd({ modifier }: { modifier?: 'in-sidebar' }) {
   return (
     <div className={classNames('footer-end', { [`footer-end__${modifier}`]: modifier })}>
+        {/*
       <div className='footer-social'>
         <div className='footer-social__label'>
           <p>Follow us:</p>
@@ -29,9 +30,15 @@ export default function FooterEnd({ modifier }: { modifier?: 'in-sidebar' }) {
           </a>
         </div>
       </div>
+        */}
+      <div>
+          <p>
+              This Technology Radar is a fork of the open source <a href='https://github.com/AOEpeople/aoe_technology_radar' target='_blank' rel='noopener noreferrer'>AOE Technology Radar</a>.
+          </p>
+      </div>
       <div className='footer-copyright'>
         <p>
-          <a href='https://www.aoe.com/en/copyright-meta/legal-information.html' target='_blank' rel='noopener noreferrer'>
+          <a href='https://subshell.com/about/imprint/' target='_blank' rel='noopener noreferrer'>
             Legal Information
           </a>
         </p>
