@@ -8,6 +8,7 @@ export const quadrants = [
     'frameworks-and-libraries',
     'cloud',
     'tools',
+    'paradigms-and-methods'
 ];
 
 export const rings = [
@@ -30,6 +31,7 @@ const messages: { [k: string]: string } = {
     'frameworks-and-libraries': 'Frameworks and Libraries',
     'cloud': 'Cloud',
     'tools': 'Tools',
+    'paradigms-and-methods': 'Paradigms and Methods'
 };
 
 export const translate = (key: string) => (messages[key] || '-');

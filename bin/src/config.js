@@ -8,6 +8,7 @@ exports.quadrants = [
     'frameworks-and-libraries',
     'cloud',
     'tools',
+    'paradigms-and-methods'
 ];
 exports.rings = [
     'all',
@@ -24,6 +25,7 @@ const messages = {
     'frameworks-and-libraries': 'Frameworks and Libraries',
     'cloud': 'Cloud',
     'tools': 'Tools',
+    'paradigms-and-methods': 'Paradigms and Methods'
 };
 exports.translate = (key) => (messages[key] || '-');
 function isMobileViewport() {
